@@ -102,6 +102,18 @@ $(document).ready(function () {
         });
 
     });
+    
+    $('.img-responsive').on('lazyload',function(){
+        var $container = $('.portfolio_container');
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 500,
+                animationEngine: "jquery"
+            }
+        });
+    })
 
     //animatedModal
     // $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
