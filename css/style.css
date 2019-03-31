@@ -760,6 +760,13 @@ fieldset {
     color: #425BB5;
 }
 
+.profile-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: none;
+}
+
 #about, #experience, #education, #projects, #contact, .modal-content {
     background-image: linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
     background-color: #0f0d15;
@@ -800,6 +807,9 @@ fieldset {
     .portfolio .categories-grid .categories ul li {
         list-style: none;
         margin: 10px 0;
+    }
+    .img-responsive {
+        height: 50vw;
     }
 }
 
