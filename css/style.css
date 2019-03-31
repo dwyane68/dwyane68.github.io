@@ -764,7 +764,6 @@ fieldset {
     display: block;
     max-width: 100%;
     height: auto;
-    width: none;
 }
 
 #about, #experience, #education, #projects, #contact, .modal-content {
