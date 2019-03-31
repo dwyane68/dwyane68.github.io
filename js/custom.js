@@ -18,6 +18,8 @@ $(document).ready(function () {
         nav = $('.navbar-fixed-top,footer'),
         nav_height = nav.outerHeight();
 
+    $('.lazy').lazyLoadXT();
+    
     $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
 
