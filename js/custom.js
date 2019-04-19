@@ -118,7 +118,7 @@ $(document).ready(function () {
     })
 
     //animatedModal
-    // $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
+    $("#ddw,#dhh,#nshama,#dtd,#booking2030,#odd-piece").animatedModal();
 
     // Contact Form 	
 
@@ -176,4 +176,29 @@ $(document).ready(function () {
         });
 
     });
+
+    //Modal Events
+    $('#btn-close-modal').click(hideProjectItem);
+    $('.portfolio_item').click(unhideProjectItem)
+
+    $( "a:contains('Hit Counter')" ).css('display','none');
 });
+
+function hideProjectItem()
+{
+    $('.project-content ').each(function(){
+        if(!$(this).hasClass('hidden')){
+            $(this).addClass('hidden');
+        }
+    })
+}
+function unhideProjectItem(ev)
+{
+    var currentID = ev.currentTarget.getAttribute('id');
+    $('.project-content').each(function(){
+        if(this.getAttribute('data-id') == currentID){
+            $(this).removeClass('hidden');
+        }
+    })
+    $('.img-responsive-full').lazyLoadXT();
+}
