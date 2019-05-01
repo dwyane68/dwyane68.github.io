@@ -331,6 +331,9 @@ a.active {
     height: auto;
     object-fit: cover;
 }
+.hit--counter img{
+    height: 0;
+}
 
 /* experience section
 ==================================================*/
@@ -813,6 +816,7 @@ fieldset {
     }
     .img-responsive {
         height: 50vw;
+        width: calc(100vw - 60px);
     }
 }
 
